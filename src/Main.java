@@ -63,7 +63,7 @@ public class Main {
         System.out.print("Hipotenüs: " + c);
 
  */
-
+/*
         int km;
         double perKm = 2.20, result = 10;
         Scanner input = new Scanner(System.in);
@@ -73,5 +73,37 @@ public class Main {
 
         result += km * 2.20;
         System.out.println("Price: " + result);
+
+ */
+
+        int number1, number2, select;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("İlk sayiyi giriniz: ");
+        number1 = input.nextInt();
+
+        System.out.println("İkinci sayiyi giriniz: ");
+        number2 = input.nextInt();
+
+        System.out.println("1-Toplama\n2-Cikarma\n3-Bölme\n4-Carpma ");
+        select = input.nextInt();
+
+        switch (select){
+            case 1:
+                System.out.println(number1 + number2);
+                break;
+            case 2:
+                System.out.println(number1 - number2);
+                break;
+            case 3:
+                System.out.println(number1 / number2);
+                break;
+            case 4:
+                System.out.println(number1 * number2);
+                break;
+            default:
+                System.out.println("yanlıs secim yaptiniz");
+                break;
+        }
     }
 }
