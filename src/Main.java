@@ -48,7 +48,7 @@ public class Main {
         System.out.println("KDV' li tutar : " + result);
 
  */
-
+/*
         int a,b;
         double c;
         Scanner input = new Scanner(System.in);
@@ -61,5 +61,17 @@ public class Main {
 
         c = Math.sqrt((a * a) + (b * b));
         System.out.print("Hipotenüs: " + c);
+
+ */
+
+        int km;
+        double perKm = 2.20, result = 10;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Km Giriniz: ");
+        km = input.nextInt();
+
+        result += km * 2.20;
+        System.out.println("Price: " + result);
     }
 }
