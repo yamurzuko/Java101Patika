@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.util.Scanner;
 
 public class Main {
@@ -37,6 +36,7 @@ public class Main {
         System.out.print("Ortalama :" + result);
 
  */
+ /*
         double price, result;
         double kdvPrice = 0.18;
         Scanner input = new Scanner(System.in);
@@ -46,5 +46,20 @@ public class Main {
         result = price * kdvPrice;
 
         System.out.println("KDV' li tutar : " + result);
+
+ */
+
+        int a,b;
+        double c;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Birinci Kenari Giriniz: ");
+        a = input.nextInt();
+
+        System.out.println("İkinci Kenari Giriniz: ");
+        b = input.nextInt();
+
+        c = Math.sqrt((a * a) + (b * b));
+        System.out.print("Hipotenüs: " + c);
     }
 }
