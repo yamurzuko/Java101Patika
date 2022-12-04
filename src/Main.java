@@ -14,6 +14,7 @@ public class Main {
         System.out.println(a);
 
  */
+ /*
         int mat, fizik, kimya, turkce, tarih, muzik;
 
         Scanner input = new Scanner(System.in);
@@ -34,5 +35,16 @@ public class Main {
         Double result = (mat + fizik + kimya + turkce + tarih + muzik) / 6.0;
 
         System.out.print("Ortalama :" + result);
+
+ */
+        double price, result;
+        double kdvPrice = 0.18;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Ücret Giriniz: ");
+        price = input.nextDouble();
+        result = price * kdvPrice;
+
+        System.out.println("KDV' li tutar : " + result);
     }
 }
